@@ -58,6 +58,7 @@ function findRoom(e) {
     reservation.roomType = roomInfo;
     console.log(reservation);
     changeContent('guest-details-form-content');
+}
 
 changeContent('search-form-content');
 document.querySelector('#search-form-button').addEventListener('click', (e) => searchFormData(e));
