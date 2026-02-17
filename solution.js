@@ -35,6 +35,8 @@ document.querySelector('#confirm-reservation').addEventListener('click', (e) => 
 function showThanksPage(e) {
     e.preventDefault();
     changeContent('thank-you-content');
+}
+
 document.querySelector('#guest-details-back-btn').addEventListener('click', (e) => fillRoomForm(e));
 
 function fillRoomForm(e) {
@@ -87,7 +89,7 @@ document.querySelectorAll('.room-type').forEach(room => {
 
 function selectRoomType(e) {
     let myTarget = undefined;
-    e.preventDefault;
+    e.preventDefault();
     if (e.target.querySelector('img') != null) {
         myTarget = e.target;
     } else {
